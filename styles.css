@@ -1,0 +1,14 @@
+.banner-logo {
+  width: 225px;
+  height: auto;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: row;
+}
