@@ -7,6 +7,14 @@
   --blue-color-1: #2b83ee;
 }
 
+/* Remove default margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .banner-logo {
   width: 240px;
   height: auto;
@@ -17,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 75vh;
 }
 
 .container-button {
@@ -75,6 +83,22 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 8px 0;
+  /* Include border and padding in width */
+  box-sizing: border-box;
+}
+
+header .container-nav {
+  top: 0;
+}
+
+footer .container-nav {
+  bottom: 0;
+  background-color: var(--grey-color-2);
+  border-top: var(--grey-color-1);
+  padding: 4px 0;
 }
 
 .nav-links {
@@ -92,6 +116,11 @@
   font-size: 0.8rem;
   padding: 3px 5px;
   margin: 10px 5px;
+}
+
+footer .nav-links li a {
+  font-size: 0.9rem;
+  padding: 3px 10px;
 }
 
 .nav-links li a:hover {
